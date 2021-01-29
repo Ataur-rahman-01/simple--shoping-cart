@@ -30,19 +30,19 @@
                 <div class="col-md-5 center-item">
                   <div class="input-group number-spinner">
                     <button
-                      onclick="handelphoneChange(false)"
+                      onclick="handelChange('phone',false)"
                       class="btn btn-default"
                     >
                       <i class="fas fa-minus"></i>
                     </button>
                     <input
-                      id="numberOfphone"
+                      id="phonecount"
                       type="text"
                       class="form-control text-center"
                       value="1"
                     />
                     <button
-                      onclick="handelphoneChange(true)"
+                      onclick="handelChange('phone',true)"
                       class="btn btn-default"
                     >
                       <i class="fas fa-plus"></i>
@@ -63,19 +63,19 @@
                 <div class="col-md-5 center-item">
                   <div class="input-group number-spinner">
                     <button
-                      onclick="handelProductChange(false)"
+                      onclick="handelChange('case', false)"
                       class="btn btn-default"
                     >
                       <i class="fas fa-minus"></i>
                     </button>
                     <input
-                      id="case-count"
+                      id="casecount"
                       type="text"
                       class="form-control text-center"
                       value="1"
                     />
                     <button
-                      onclick="handelProductChange(true)"
+                      onclick="handelChange('case',true)"
                       class="btn btn-default"
                     >
                       <i class="fas fa-plus"></i>
@@ -96,9 +96,9 @@
                 </div>
 
                 <div class="col-md-4 status">
-                  <h5>$1,278</h5>
-                  <h5>$0</h5>
-                  <h5>$1,278</h5>
+                  <h5 id="sub-total">$1,278</h5>
+                  <h5 id="tax">$0</h5>
+                  <h5 id="total">$1,278</h5>
                 </div>
               </div>
             </div>
